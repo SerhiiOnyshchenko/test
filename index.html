@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <title>ENERGO PRO</title>
+  </head>
+  <body>
+        <div class="page1">
+          <div class="container">
+            <div class="page1__wrapper">
+              <div class="header">
+                <img class="header__logo" src="/img/logo.png" alt="">
+                <ul class="header__info">
+                  <li class="header__info-email">
+                    <img src="/img/icons/email-info.png" alt="info@compressorua.com">
+                    <a href="email:info@compressorua.com">info@compressorua.com</a>
+                  </li>
+                  <li class="header__info-phone">
+                    <img src="/img/icons/phone-info.png" alt="050 345 4030">
+                    <a href="tel:050 345 4030">050 345 4030</a>
+                  </li>
+                  <li class="header__info-phone">
+                    <img src="/img/icons/phone-info.png" alt="067 535 4030">
+                    <a href="tel:067 535 4030">067 535 4030</a>
+                  </li>
+                </ul>
+              </div>
+              <h1 class="page1__title"><span class="blue">Безошибочный</span>
+                подбор фильтров к компрессорам</h1>
+              <div class="page1__text border-angle">
+                <p><span>3 варианта на любой бюджет!</span></p>
+                <p><span>Всего за 15 минут!</span></p>
+                <p><span>С консультацией сервис-инженера!</span></p>
+              </div>
+              <form class="page1__call-back" id="form" action="#">
+                <h3 class="page1__call-back-title">Подобрать фильтр</h3>
+                <input type="file" accept='.jpg, .png' name="image" id='formImage'>
+                <label class="page1__inp inp--file"  for="formImage">
+                  <span>Фото компрессора</span> 
+                  <div id="formPreview">
+                    <img src="/img/icons/icons8-upload_to_cloud.png" for="file">
+                  </div>
+                </label>
+                <div class="inp--code">
+                  <input class="page1__inp _req" type="text" name="code" placeholder="Код фильтра">
+                </div>
+                <div class="inp--name">
+                  <input class="page1__inp _req" type="text" name="name" placeholder="Ваше имя">
+                </div>
+                <div class="inp--tel">
+                  <input class="page1__inp _req" type="tel" name="phone" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" placeholder="Телефон для связи" >
+                </div>
+                <input class="page1__call-back-btn btn-yellow" type="submit" value="Отправить">
+              </form>
+              <a href="#page2" class="page1__arrow-down"></a>
+            </div>
+          </div>
+        </div>
+        <div class="page2"  id="page2">
+          <div class="container">
+            <div class="page2__text">
+              <h2 class="page2__text-title">нам доверяют тысячи
+                украинскиих предприятий</h2>
+              <div class="page2__text-border border-angle">
+                <span class="blue">90% в наличии
+                  на складе</span>
+              </div>
+            </div>
+            <div class="page2__slider">
+              <div class="page2__slider-photos">
+                <a class="page2__slider-item" onmouseover="show(1)" data-fancybox="gallery" href="img/l1.jpg"><img src="img/l1.jpg"></a>
+                <a class="page2__slider-item" onmouseover="show(2)" data-fancybox="gallery" href="img/l1.jpg"><img src="img/l1.jpg"></a>
+                <a class="page2__slider-item" onmouseover="show(3)" data-fancybox="gallery" href="img/l1.jpg"><img src="img/l1.jpg"></a>
+                <a class="page2__slider-item" onmouseover="show(4)" data-fancybox="gallery" href="img/l1.jpg"><img src="img/l1.jpg"></a>
+                <a class="page2__slider-item" onmouseover="show(5)" data-fancybox="gallery" href="img/l1.jpg"><img src="img/l1.jpg"></a>
+                <a class="page2__slider-item" onmouseover="show(6)" data-fancybox="gallery" href="img/l1.jpg"><img src="img/l1.jpg"></a>
+              </div>
+              <button class="page2__slider-btn btn-left"  id="btnLeft" type="button"></button>
+              <button class="page2__slider-btn btn-right"  id="btnRight" type="button"></button>
+            </div>
+            <div class="page2__slider-pagination"><span id="activImg">1</span>/6</div>
+          </div>
+        </div>
+  <script src="js/style.js"></script>
+  </body>
+</html>
