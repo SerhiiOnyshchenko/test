@@ -348,6 +348,35 @@ input[type="file"] {
   background: url(../img/elipses3.png) 8% 41.5% no-repeat, url(../img/fone2.png) -10% 63.3% no-repeat;
 }
 
+.page2__wrapper {
+  position: relative;
+}
+
+.page2__wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -101%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 30px #fff;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.page2__wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -102%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  z-index: 5;
+  overflow: hidden;
+}
+
 .page2__text {
   padding-top: 84px;
   margin-bottom: 70px;
@@ -414,6 +443,7 @@ input[type="file"] {
   height: 505px;
   box-shadow: 0 18px 56px 1px rgba(174, 174, 174, 0.71);
   border-radius: 5px;
+  margin-right: 15px;
 }
 
 .page2__slider-btn {
