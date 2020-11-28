@@ -17,7 +17,7 @@
           <div class="container">
             <div class="page1__wrapper">
               <div class="header">
-                <img class="header__logo" src="./img/logo.png" alt="">
+                <img class="header__logo" src="img/logo.png" alt="">
                 <ul class="header__info">
                   <li class="header__info-email">
                     <img src="img/icons/email-info.png" alt="info@compressorua.com">
@@ -66,27 +66,35 @@
         </div>
         <div class="page2"  id="page2">
           <div class="container">
-            <div class="page2__text">
-              <h2 class="page2__text-title">нам доверяют тысячи
-                украинскиих предприятий</h2>
-              <div class="page2__text-border border-angle">
-                <span class="blue">90% в наличии
-                  на складе</span>
+            <div class="page2__wrapper">
+              <div class="page2__text">
+                <h2 class="page2__text-title">нам доверяют тысячи
+                  украинскиих предприятий</h2>
+                <div class="page2__text-border border-angle">
+                  <span class="blue">90% в наличии
+                    на складе</span>
+                </div>
               </div>
-            </div>
-            <div class="page2__slider">
-              <div class="page2__slider-photos">
-                <a class="page2__slider-item" onmouseover="show(1)" data-fancybox="gallery" href="img/l1.jpg"><img src="img/l1.jpg"></a>
-                <a class="page2__slider-item" onmouseover="show(2)" data-fancybox="gallery" href="img/l1.jpg"><img src="img/l1.jpg"></a>
-                <a class="page2__slider-item" onmouseover="show(3)" data-fancybox="gallery" href="img/l1.jpg"><img src="img/l1.jpg"></a>
-                <a class="page2__slider-item" onmouseover="show(4)" data-fancybox="gallery" href="img/l1.jpg"><img src="img/l1.jpg"></a>
-                <a class="page2__slider-item" onmouseover="show(5)" data-fancybox="gallery" href="img/l1.jpg"><img src="img/l1.jpg"></a>
-                <a class="page2__slider-item" onmouseover="show(6)" data-fancybox="gallery" href="img/l1.jpg"><img src="img/l1.jpg"></a>
+              <div class="page2__slider">
+                <div class="page2__slider-photos">
+                  <a class="page2__slider-item" onmouseover="show(1)" data-fancybox="gallery" href="img/l1.jpg"><img
+                      src="img/l1.jpg"></a>
+                  <a class="page2__slider-item" onmouseover="show(2)" data-fancybox="gallery" href="img/l1.jpg"><img
+                      src="img/l1.jpg"></a>
+                  <a class="page2__slider-item" onmouseover="show(3)" data-fancybox="gallery" href="img/l1.jpg"><img
+                      src="img/l1.jpg"></a>
+                  <a class="page2__slider-item" onmouseover="show(4)" data-fancybox="gallery" href="img/l1.jpg"><img
+                      src="img/l1.jpg"></a>
+                  <a class="page2__slider-item" onmouseover="show(5)" data-fancybox="gallery" href="img/l1.jpg"><img
+                      src="img/l1.jpg"></a>
+                  <a class="page2__slider-item" onmouseover="show(6)" data-fancybox="gallery" href="img/l1.jpg"><img
+                      src="img/l1.jpg"></a>
+                </div>
+                <button class="page2__slider-btn btn-left" id="btnLeft" type="button"></button>
+                <button class="page2__slider-btn btn-right" id="btnRight" type="button"></button>
               </div>
-              <button class="page2__slider-btn btn-left"  id="btnLeft" type="button"></button>
-              <button class="page2__slider-btn btn-right"  id="btnRight" type="button"></button>
+              <div class="page2__slider-pagination"><span id="activImg">1</span>/6</div>
             </div>
-            <div class="page2__slider-pagination"><span id="activImg">1</span>/6</div>
           </div>
         </div>
   <script src="js/style.js"></script>
