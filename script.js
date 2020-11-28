@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     formData.append("image", formImage.files[0]);
 
     if (error === 0) {
-      form.classList.add('_loading')
+      form.classList.add('_loading');
       let response = await fetch("sendmail.php", {
         method: "POST",
         body: formData,
