@@ -19,10 +19,10 @@ document.addEventListener("DOMContentLoaded", function () {
         body: formData,
       });
       if (response.ok){
-        let result = await response.json()
-        alert(result.message)
+        let result = await response.json();
+        alert(result.message);
         formPreview.innerHTML = `<img src="img/icons/icons8-upload_to_cloud.png" for="file">`;
-        form.reset()
+        form.reset();
       form.classList.remove("_loading");
       } else {
       alert("Ошибка");
