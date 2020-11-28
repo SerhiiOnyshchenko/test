@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (response.ok){
         let result = await response.json()
         alert(result.message)
-        formPreview.innerHTML = `<img src="/img/icons/icons8-upload_to_cloud.png" for="file">`;
+        formPreview.innerHTML = `<img src="img/icons/icons8-upload_to_cloud.png" for="file">`;
         form.reset()
       form.classList.remove("_loading");
       } else {
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     var reander = new FileReader();
     reander.onload = function (e) {
-      formPreview.innerHTML = `<img src="/img/icons/clip.png" alt="file">`;
+      formPreview.innerHTML = `<img src="img/icons/clip.png" alt="file">`;
     };
     reander.onerror = function (e) {
       alert("Ошибка");
