@@ -12,7 +12,7 @@
    $mail->IsHTML(true);
    
    //от кого письмо
-   $mail->setForm('VKHellboy@ukr.net',"получилося!!");
+   $mail->setForm('your@email.com',"получилося!!");
    //кому
    $mail->addAddress('VKHellboy@gmail.com');
    //Тема
