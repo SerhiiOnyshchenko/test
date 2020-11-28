@@ -12,10 +12,10 @@
    $mail->IsHTML(true);
    
    //от кого письмо
-   $mail->setForm('your@email.com',"получилося!!");
+   $mail->setForm('ceo@tkachuk.pro',"Сайт заказа");
    //кому
-   $mail->addAddress('VKHellboy@gmail.com');
-   //Тема
+   $mail->addAddress('ceo@tkachuk.pro');
+   //Тема письма
    $mail->Subjact = "Фильтри";
 
    //Тело письма
