@@ -96,7 +96,7 @@ var multiItemSlider = (function () {
       _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента
       _positionLeftItem = 0, // позиция левого активного элемента
       _transform = -0.0001, // значение транфсофрмации .slider_wrapper
-      _step = ((_itemWidth+30) / _wrapperWidth) * 100, // величина шага (для трансформации)
+      _step = ((_itemWidth + 30) / _wrapperWidth) * 100, // величина шага (для трансформации)
       _items = []; // массив элементов
     _sliderControlLeft.disabled = true;
     // наполнение массива _items
@@ -182,8 +182,41 @@ var multiItemSlider = (function () {
   };
 })();
 
-var slider = multiItemSlider(".page2__slider");
+multiItemSlider(".page2__slider");
 
 function show(e) {
   document.getElementById("activImg").innerText = e;
+}
+
+let animItems = document.querySelectorAll("._anim-items");
+
+if (animItems.length > 0) {
+  window.addEventListener("scroll", animScroll);
+  function animScroll() {
+    for (let i = 0; i < animItems.length; i++) {
+      const animItem = animItems[i];
+      const animItemHeight = animItem.offsetHeight;
+      const animItemOffset = offset(animItem).top;
+      const animStart = 4;
+
+      let animItemPoint = window.innerHeight - window.innerHeight / animStart;
+
+      if (
+        pageYOffset > animItemOffset - animItemPoint &&
+        pageYOffset < animItemOffset + animItemHeight
+      ) {
+        animItem.classList.add("_active");
+      } else {
+        animItem.classList.remove("_active");
+      }
+      function offset(el) {
+        const rect = el.getBoundingClientRect(),
+          scrollLeft =
+            window.pageXOffset || document.documentElement.scrollLeft,
+          scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
+      }
+    }
+  }
+  animScroll();
 }

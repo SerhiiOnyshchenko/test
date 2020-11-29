@@ -105,6 +105,10 @@ body {
   align-items: center;
 }
 
+.header__info > li > img {
+  animation: tada 2s infinite;
+}
+
 .header__info-email a {
   padding-left: 0.6rem;
   font-size: 1.6rem;
@@ -140,6 +144,7 @@ body {
   font-weight: 900;
   line-height: 7.2rem;
   text-transform: uppercase;
+  animation: backInLeft 2s;
 }
 
 .page1__text {
@@ -148,6 +153,7 @@ body {
   font-size: 1.7rem;
   font-weight: 600;
   line-height: 3.5rem;
+  animation: slideInUp 2s;
 }
 
 .page1__text > p > span {
@@ -400,6 +406,10 @@ input[type="file"] {
   line-height: 5.4rem;
 }
 
+.page2__text-title._active {
+  animation: backInLeft 2s;
+}
+
 .page2__text-border {
   max-width: 30.5rem;
   height: 8.9rem;
@@ -412,6 +422,10 @@ input[type="file"] {
   text-transform: uppercase;
   border: 1px solid #f1f1f1;
   background-color: #fafafa;
+}
+
+.page2__text-border._active {
+  animation: slideInRight 2s;
 }
 
 .page2__slider {
